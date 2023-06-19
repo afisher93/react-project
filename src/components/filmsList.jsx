@@ -1,4 +1,5 @@
-import { component } from "react";
+
+import { Component } from "react";
 
 class FilmsList extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class FilmsList extends Component {
         }
     }
     getFilms() {
-        fetch("https://ghibliapi.herokuapp.com/films")
+        fetch("https://studioghibliapi-d6fc8.web.app/films")
         .then((response) => response.json())
         .then((films) => this.setState({ list: films }))
         .catch((error) => console.error(error))
