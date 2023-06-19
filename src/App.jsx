@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React from "react";
 import FilmsList from "./components/filmsList";
 
 class App extends React.Component {
@@ -44,3 +44,5 @@ class App extends React.Component {
     );
   }
 }
+
+export default App;
